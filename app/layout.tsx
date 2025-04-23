@@ -1,0 +1,28 @@
+import "@styles/globals.css";
+import fonts from "@public/fonts/index";
+import Footer from "@components/layout/Footer";
+import LoadingScreen from "@/components/ui/LoadingScreen";
+
+export const metadata = {
+  title: "Hexalt - Développement Web",
+  description: "Site vitrine de l'auto-entreprise Hexalt",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="fr"
+      className={`${fonts.btEl.variable} ${fonts.btRg.variable} ${fonts.btSb.variable}  ${fonts.roboto.variable}`}
+    >
+      <body className="bg-quaternary">
+        <LoadingScreen />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
