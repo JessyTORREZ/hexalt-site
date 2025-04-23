@@ -1,7 +1,8 @@
 import "@styles/globals.css";
 import fonts from "@public/fonts/index";
 import Footer from "@components/layout/Footer";
-import LoadingScreen from "@/components/ui/LoadingScreen";
+import LoadingScreen from "@components/ui/LoadingScreen";
+import Header from "@components/layout/Header";
 
 export const metadata = {
   title: "Hexalt - Développement Web",
@@ -20,6 +21,7 @@ export default function RootLayout({
     >
       <body className="bg-quaternary">
         <LoadingScreen />
+        <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
