@@ -26,8 +26,7 @@ export default function CurveReveal({ onComplete, start }: CurveRevealProps) {
 
       const width = window.innerWidth;
       const height = window.innerHeight;
-      const progress = Math.min(frame / 60, 1);
-      const curve = 160 * (1 - Math.pow(progress - 1, 2));
+      const progress = Math.min(frame / 30, 1);
       const offset = width * (1 - progress);
 
       const p1 = `M ${width},0`;
@@ -59,7 +58,7 @@ export default function CurveReveal({ onComplete, start }: CurveRevealProps) {
   return (
     <div
       ref={wrapperRef}
-      className="fixed top-0 left-0 w-screen h-screen z-[60] pointer-events-none"
+      className="fixed top-0 left-0 w-screen h-screen z-[50] pointer-events-none"
     >
       <svg
         width="100%"
