@@ -1,6 +1,6 @@
 import Hero from "@components/sections/Home/Hero";
 import ClientBanner from "@/components/sections/Home/ClientBanner";
-import BusinessSection from "@/components/sections/Home/BusinessSection";
+import SkillsSection from "@/components/sections/Home/SkillsSection";
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <Hero />
       <ClientBanner />
-      <BusinessSection />
+      <SkillsSection />
       {/* On ajoutera les autres sections ici ensuite */}
     </div>
   );
