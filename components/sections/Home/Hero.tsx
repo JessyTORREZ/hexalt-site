@@ -5,8 +5,8 @@ export default function Hero() {
 
 
   return (
-    <section className="min-h-[100vh] flex flex-col lg:flex-row font-body">
-      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:h-[80vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-dark to-secondary-lighter px-4 py-10 shadow-lg">
+    <section className="flex flex-col lg:flex-row font-body">
+      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:h-[100vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-dark to-secondary-lighter px-4 py-10 shadow-lg">
         <h2 className="absolute lg:self-start text-5xl md:text-7xl lg:text-6xl 2xl:text-7xl mb-4 font-heading-sb">
           Hexalt<span className="text-primary">.</span>
         </h2>
