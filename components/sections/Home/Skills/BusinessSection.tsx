@@ -36,14 +36,20 @@ export default function BusinessSection() {
           devient un atout concret pour votre réussite.
         </p>
         <div className="mt-8">
-          <Link
-            href="/contact"
-            className="inline-block bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600 transition"
-          >
-            Demander un devis gratuit
-          </Link>
+          <button className="group relative overflow-hidden rounded-md bg-secondary-dark px-6 text-neutral-50 transition">
+            <Link
+              href="/contact"
+              className="inline-block font-body bg-secondary-dark text-white py-3 px-6 rounded-md transition"
+            >
+              Demander un devis gratuit
+            </Link>
+            <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
+          </button>
         </div>
       </div>
     </section>
   );
 }
+
+
+ 

@@ -33,16 +33,24 @@ export default function Hero() {
         <div className="flex flex-row justify-start items-left text-left py-10 px-10 gap-4">
           <a
             href="mailto:jestor.devweb@gmail.com"
-            className="inline-flex items-center justify-center w-24 min-w-24 h-12 rounded-md shadow-lg bg-quaternary text-secondary border-2 border-secondary hover:bg-quaternary-dark"
+            className="group relative inline-flex items-center justify-center h-12 w-24 min-w-24 overflow-hidden rounded-md bg-quaternary px-6 text-secondary transition border-2 border-secondary shadow-lg"
           >
-            <Mail className="size-6" />
+            <Mail className="size-6 relative z-10" />
+            {/* Effet hover progressif */}
+            <div className="absolute inset-0 h-full w-0 bg-secondary/30 transition-[width] duration-300 ease-out group-hover:w-full"></div>
           </a>
           <a
             href="tel:0677513920"
-            className="inline-flex items-center justify-center gap-2 w-48 min-w-24 lg:min-w-3xs h-12 font-bold rounded-md shadow-lg bg-quaternary text-secondary border-2 border-secondary hover:bg-quaternary-dark"
+            className="group relative inline-flex items-center justify-center gap-2 w-48 min-w-24 lg:min-w-3xs h-12 font-bold rounded-md shadow-lg bg-quaternary text-secondary border-2 border-secondary overflow-hidden transition"
           >
-            <PhoneCall className="block size-6" />
-            <p className="hidden md:block"> : 06 77 51 39 20</p>
+            {/* Icône */}
+            <PhoneCall className="block size-6 relative z-10" />
+
+            {/* Numéro visible sur desktop */}
+            <p className="hidden md:block relative z-10">: 06 77 51 39 20</p>
+
+            {/* Effet hover progressif */}
+            <div className="absolute inset-0 h-full w-0 bg-secondary/30 transition-[width] duration-300 ease-out group-hover:w-full"></div>
           </a>
         </div>
       </div>
