@@ -1,5 +1,7 @@
+
 import { Mail } from "lucide-react";
 import { PhoneCall } from "lucide-react";
+import Dolottiereact from "@/components/ui/Dolottiereact";
 
 export default function Hero() {
 
@@ -12,9 +14,7 @@ export default function Hero() {
         </h2>
 
         <div className="flex-grow flex items-center justify-center w-full min-h-[80px]">
-          <div className="text-5xl font-body font-el flex gap-4 items-center">
-            {/* Ici je vais mettre des animations d'hexagone avec three-js */}
-          </div>
+          <Dolottiereact />
         </div>
       </div>
 
