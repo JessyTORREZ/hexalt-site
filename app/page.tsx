@@ -1,6 +1,6 @@
-import Hero from "@components/sections/Home/Hero";
-import ClientBanner from "@/components/sections/Home/ClientBanner";
-import SkillsSection from "@/components/sections/Home/SkillsSection";
+import Hero from "@/components/sections/home/Hero";
+import ClientBanner from "@/components/sections/home/ClientBanner";
+import SkillsSection from "@/components/sections/home/SkillsSection";
 
 
 export default function Home() {
@@ -9,7 +9,6 @@ export default function Home() {
       <Hero />
       <ClientBanner />
       <SkillsSection />
-      {/* On ajoutera les autres sections ici ensuite */}
     </div>
   );
 }

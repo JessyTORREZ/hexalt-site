@@ -1,7 +1,7 @@
 
 import { Mail } from "lucide-react";
 import { PhoneCall } from "lucide-react";
-import Dolottiereact from "@/components/ui/Dolottiereact";
+import Dolottiereact from "@/components/ui/ImgHome";
 
 export default function Hero() {
 

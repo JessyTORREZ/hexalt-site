@@ -1,4 +1,4 @@
-import FlowCards from "@/components/layout/FlowCards";
+import FlowCards from "@/components/sections/services/FlowCards";
 
 export default function ServicesPage() {
   return (

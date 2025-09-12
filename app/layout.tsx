@@ -1,5 +1,5 @@
 import "@styles/globals.css";
-import fonts from "@public/fonts/index";
+import fonts from "@/lib/fonts";
 import Footer from "@components/layout/Footer";
 import LoadingScreen from "@components/ui/LoadingScreen";
 import GlobalUI from "@components/layout/GlobalUI";

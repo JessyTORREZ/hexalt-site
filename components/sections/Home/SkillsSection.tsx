@@ -1,5 +1,5 @@
-import BusinessSection from "./Skills/BusinessSection";
-import AboutSection from "./Skills/AboutSection";
+import BusinessSection from "@components/sections/home/Skills/BusinessSection";
+import AboutSection from "@components/sections/home/Skills/AboutSection";
 
 export default function SkillsSection() {
   return (

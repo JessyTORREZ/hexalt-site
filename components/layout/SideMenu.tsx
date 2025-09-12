@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useMenuStore } from "@lib/stores/useMenuStore";
+import { useMenuStore } from "@/lib/stores/useMenuStore";
 import Link from "next/link";
 
 // Conteneur qui gère le stagger (effet de cascade)

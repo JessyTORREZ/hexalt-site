@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google";
 
 export const btEl = localFont({
-  src: "../fonts/built_titling_el-webfont.woff2",
+  src: "../public/fonts/built_titling_el-webfont.woff2",
   weight: "200",
   style: "normal",
   display: "swap",
@@ -10,7 +10,7 @@ export const btEl = localFont({
 });
 
 export const btRg = localFont({
-  src: "../fonts/built_titling_rg-webfont.woff2",
+  src: "../public/fonts/built_titling_rg-webfont.woff2",
   weight: "400",
   style: "normal",
   display: "swap",
@@ -18,14 +18,14 @@ export const btRg = localFont({
 });
 
 export const btSb = localFont({
-  src: "../fonts/built_titling_sb-webfont.woff2",
+  src: "../public/fonts/built_titling_sb-webfont.woff2",
   weight: "600",
   style: "normal",
   display: "swap",
   variable: "--font-bt-sb",
 });
 
-const roboto = Roboto({
+export const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-roboto",
@@ -38,4 +38,5 @@ const fonts = {
   btSb,
   roboto,
 };
+
 export default fonts;
