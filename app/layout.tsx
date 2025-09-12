@@ -2,7 +2,7 @@ import "@styles/globals.css";
 import fonts from "@public/fonts/index";
 import Footer from "@components/layout/Footer";
 import LoadingScreen from "@components/ui/LoadingScreen";
-import Header from "@components/layout/Header";
+import GlobalUI from "@components/layout/GlobalUI";
 
 export const metadata = {
   title: "Hexalt - Développement Web",
@@ -17,12 +17,11 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${fonts.btEl.variable} ${fonts.btRg.variable} ${fonts.btSb.variable}  ${fonts.roboto.variable}`}
+      className={`${fonts.btEl.variable} ${fonts.btRg.variable} ${fonts.btSb.variable} ${fonts.roboto.variable}`}
     >
       <body className="bg-quaternary">
         <LoadingScreen />
-        <Header />
-        <main className="min-h-screen">{children}</main>
+        <GlobalUI>{children}</GlobalUI>
         <Footer />
       </body>
     </html>

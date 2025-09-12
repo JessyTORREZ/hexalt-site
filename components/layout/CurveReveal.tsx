@@ -10,7 +10,7 @@ interface CurveRevealProps {
 export default function CurveReveal({ onComplete, start }: CurveRevealProps) {
   const pathRef = useRef<SVGPathElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const hasCompletedRef = useRef(false); // 🔐 bloque le 2e déclenchement
+  const hasCompletedRef = useRef(false);
 
   useEffect(() => {
     if (!start || hasCompletedRef.current) return; 
@@ -58,7 +58,7 @@ export default function CurveReveal({ onComplete, start }: CurveRevealProps) {
   return (
     <div
       ref={wrapperRef}
-      className="fixed top-0 left-0 w-screen h-screen z-[50] pointer-events-none"
+      className="fixed top-0 left-0 w-screen h-screen z-[60] pointer-events-none"
     >
       <svg
         width="100%"

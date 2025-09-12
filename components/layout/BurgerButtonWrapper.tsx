@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { useMenuStore } from "@/lib/stores/useMenuStore";
-import CurveReveal from "@/components/ui/CurveReveal";
-import BurgerButton from "@/components/ui/BurgerButton";
-import SideMenu from "@/components/layout/SideMenu";
+import { useMenuStore } from "@lib/stores/useMenuStore";
+import CurveReveal from "@/components/layout/CurveReveal";
+import BurgerButton from "@components/ui/BurgerButton";
+import SideMenu from "@components/layout/SideMenu";
 
 export default function BurgerMenuWrapper() {
   const [showCurve, setShowCurve] = useState(false);
@@ -14,17 +14,17 @@ export default function BurgerMenuWrapper() {
   
 
   const handleClick = () => {
-    // si menu ouvert → on ferme
+
     if (isOpen) {
       closeMenu();
     } else {
       setShowCurve(true);
-      requestAnimationFrame(() => setStartCurve(true)); // Démarre l'animation de la courbe
+      requestAnimationFrame(() => setStartCurve(true));
     }
   };
 
   const handleAnimationEnd = () => {
-    setStartCurve(false); // Arrête l'animation de la courbe
+    setStartCurve(false);
     setShowCurve(false);
     openMenu();
   };

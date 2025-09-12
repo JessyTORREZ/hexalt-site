@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function AboutSection() {
   return (
@@ -33,7 +34,7 @@ export default function AboutSection() {
           activité grâce au digital.
         </p>
         <div className="mt-8">
-          <button className="group relative overflow-hidden rounded-md bg-secondary-dark px-6 text-neutral-50 transition">
+          <Button className="group relative overflow-hidden rounded-md bg-secondary-dark px-6 text-neutral-50 transition">
             <Link
               href="/contact"
               className="inline-block font-body bg-secondary-dark text-white py-3 px-6 rounded-md transition"
@@ -41,7 +42,7 @@ export default function AboutSection() {
               Travailler avec Hexalt
             </Link>
             <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
-          </button>
+          </Button>
         </div>
       </div>
     </section>

@@ -8,10 +8,8 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row font-body">
-      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:h-[100vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-dark to-secondary-lighter px-4 py-10 shadow-lg">
-        <h2 className="absolute lg:self-start text-5xl md:text-7xl lg:text-6xl 2xl:text-7xl mb-4 font-heading-sb">
-          Hexalt<span className="text-primary">.</span>
-        </h2>
+      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:h-[100vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-lighter to-secondary px-4 py-10 shadow-lg">
+       
 
         <div className="flex-grow flex items-center justify-center w-full min-h-[80px]">
           <Dolottiereact />
@@ -19,7 +17,7 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-col justify-center items-left w-full lg:w-[50vw] text-left  py-10 px-10">
-        <h1 className="text-secondary text-4xl md:text-5xl xl:text-6xl font-heading-sb mb-4">
+        <h1 className="text-secondary-dark text-4xl md:text-5xl xl:text-6xl font-heading-sb mb-4">
           Hexalt <span className="text-primary">–</span> Sites web créatifs{" "}
           <span className="text-primary">&</span> performants.
         </h1>

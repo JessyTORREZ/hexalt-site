@@ -1,3 +1,10 @@
+import FlowCards from "@/components/layout/FlowCards";
+
 export default function ServicesPage() {
-  return <h1 className="text-3xl">Nos services</h1>;
+  return (
+    <>
+      <h1 className="text-3xl">Nos services</h1>
+      
+    </>
+  );
 }

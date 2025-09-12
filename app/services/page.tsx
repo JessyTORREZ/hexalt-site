@@ -1,3 +1,11 @@
+import React from "react";
+import CTAContact from "@/components/layout/CTAContact";
+
 export default function ServicesPage() {
-  return <h1 className="text-3xl">Nos services</h1>;
+  return (
+    <div>
+      <CTAContact />
+      
+    </div>
+  );
 }

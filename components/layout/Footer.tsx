@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           {/* Gauche : Hexalt + texte */}
           <div className="max-w-xl relative">
-            <h2 className="text-5xl md:text-7xl lg:text-6xl 2xl:text-7xl font-heading-sb text-secondary">
+            <h2 className="text-5xl md:text-7xl lg:text-6xl 2xl:text-7xl font-heading-sb text-secondary-dark">
               Hexalt<span className="text-primary">.</span>
             </h2>
             <p className="mt-4 font-body text-sm leading-relaxed text-secondary">

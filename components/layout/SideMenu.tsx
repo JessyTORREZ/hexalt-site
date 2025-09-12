@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useMenuStore } from "@/lib/stores/useMenuStore";
+import { useMenuStore } from "@lib/stores/useMenuStore";
 import Link from "next/link";
 
 // Conteneur qui gère le stagger (effet de cascade)
@@ -28,7 +28,7 @@ export default function SideMenu() {
     <AnimatePresence>
       {isOpen && (
         <motion.aside
-          className="fixed top-0 left-0 z-40 w-full h-screen bg-gradient-to-br from-secondary-dark to-secondary-lighter text-quaternary text-right flex items-center justify-end px-12"
+          className="fixed top-0 left-0 z-[50] w-full h-screen bg-gradient-to-br from-secondary-dark to-secondary-lighter text-quaternary text-right flex items-center justify-end px-12"
           animate={{ x: 0 }}
           exit={{ x: "100%" }}
           transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
