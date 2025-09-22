@@ -29,22 +29,28 @@ export default function Footer() {
             <nav className="flex flex-col gap-2 font-body">
               <Link
                 href="/mentions-legales"
-                className="text-secondary underline-offset-4 hover:underline"
+                className="block py-2 text-secondary underline-offset-4 hover:underline"
               >
                 Mentions légales
               </Link>
               <Link
                 href="/conditions-generales-de-vente"
-                className="text-secondary underline-offset-4 hover:underline"
+                className="block py-2 text-secondary underline-offset-4 hover:underline"
               >
                 Conditions générales de vente
+              </Link>
+              <Link
+                href="/politique-de-confidentialite"
+                className="block py-2 text-secondary underline-offset-4 hover:underline"
+              >
+                Politique de confidentialité
               </Link>
             </nav>
           </div>
         </div>
 
         {/* Bas de page */}
-        <div className="mt-10 border-t border-secondary/20 pt-6 text-xs font-body text-secondary/70 text-center md:text-left">
+        <div className="mt-10 border-t border-secondary/20 pt-6 text-xs font-body text-secondary text-center md:text-left">
           © {new Date().getFullYear()} Hexalt — Tous droits réservés.
         </div>
       </div>

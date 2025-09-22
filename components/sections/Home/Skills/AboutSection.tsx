@@ -34,14 +34,11 @@ export default function AboutSection() {
           activité grâce au digital.
         </p>
         <div className="mt-8">
-          <Button className="group relative overflow-hidden rounded-md bg-secondary-dark px-6 text-neutral-50 transition">
-            <Link
-              href="/contact"
-              className="inline-block font-body bg-secondary-dark text-white py-3 px-6 rounded-md transition"
-            >
-              Travailler avec Hexalt
+          <Button variant="fancy" className="py-3 px-6" asChild>
+            <Link href="/about">
+              <span className="absolute inset-0 w-0 bg-primary transition-all duration-500 ease-out group-hover:w-full"></span>
+              <span className="relative z-10">Nos valeurs</span>
             </Link>
-            <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
           </Button>
         </div>
       </div>

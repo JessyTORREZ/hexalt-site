@@ -42,7 +42,7 @@ export default function SideMenu() {
             {[
               { href: "/", label: "Accueil" },
               { href: "/services", label: "Services" },
-              { href: "/projects", label: "Réalisations" },
+              //{ href: "/projects", label: "Réalisations" },
               { href: "/about", label: "À propos" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (

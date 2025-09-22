@@ -31,6 +31,7 @@ export default function Hero() {
         <div className="flex flex-row justify-start items-left text-left py-10 px-10 gap-4">
           <a
             href="mailto:jestor.devweb@gmail.com"
+            aria-label="Envoyer un email à Hexalt"
             className="group relative inline-flex items-center justify-center h-12 w-24 min-w-24 overflow-hidden rounded-md bg-quaternary px-6 text-secondary transition border-2 border-secondary shadow-lg"
           >
             <Mail className="size-6 relative z-10" />
@@ -39,6 +40,7 @@ export default function Hero() {
           </a>
           <a
             href="tel:0677513920"
+            aria-label="Appeler Hexalt au 06 77 51 39 20"
             className="group relative inline-flex items-center justify-center gap-2 w-48 min-w-24 lg:min-w-3xs h-12 font-bold rounded-md shadow-lg bg-quaternary text-secondary border-2 border-secondary overflow-hidden transition"
           >
             {/* Icône */}

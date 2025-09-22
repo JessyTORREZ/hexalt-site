@@ -1,17 +1,22 @@
 "use client";
 
 import Header from "@components/layout/Header";
-import BurgerButtonWrapper from "@components/layout/BurgerButtonWrapper";
-import SideMenu from "@components/layout/SideMenu";
+import BodyScrollLock from "@components/utils/BodyScrollLock";
 import { CurveProvider } from "@/lib/context/CurveContext";
+import dynamic from "next/dynamic";
+
+// Import dynamique du LoadingScreen
+const LoadingScreen = dynamic(() => import("@components/ui/LoadingScreen"), {
+  ssr: false,
+});
 
 export default function GlobalUI({ children }: { children: React.ReactNode }) {
   return (
     <CurveProvider>
+      <LoadingScreen />
       <Header />
-      <BurgerButtonWrapper />
-      <SideMenu />
-      <main className="min-h-screen">{children}</main>
+      <BodyScrollLock />
+      <main>{children}</main>
     </CurveProvider>
   );
 }
