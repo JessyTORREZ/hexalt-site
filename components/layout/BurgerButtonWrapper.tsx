@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { useMenuStore } from "@/lib/stores/useMenuStore";
 import CurveReveal from "@/components/layout/CurveReveal";
 import BurgerButton from "@components/ui/BurgerButton";

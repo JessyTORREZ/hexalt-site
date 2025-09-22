@@ -6,7 +6,7 @@ const services = [
     title: "Création de site web",
     description: "Sites vitrines, applications sur-mesure, e-commerce...",
     details:
-      "Passez votre entreprise dans l'univers 2.0 avec un site web moderne, rapide et adapté à vos besoins.",
+      "Passez votre entreprise dans l&apos;univers 2.0 avec un site web moderne, rapide et adapté à vos besoins.",
     icon: <Code className="size-10" />,
   },
   {

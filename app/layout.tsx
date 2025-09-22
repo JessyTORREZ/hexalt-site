@@ -2,7 +2,6 @@ import "@styles/globals.css";
 import { Metadata } from "next";
 import fonts from "@/lib/fonts";
 import Footer from "@components/layout/Footer";
-import LoadingScreen from "@components/ui/LoadingScreen";
 import GlobalUI from "@components/layout/GlobalUI";
 
 export const metadata: Metadata = {
