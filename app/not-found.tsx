@@ -1,11 +1,14 @@
+import { Metadata } from "next";
+import NotFoundClient from "@/components/sections/not-found/NotFoundClient";
+
+export const metadata: Metadata = {
+  title: "Page non trouvée | Hexalt",
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 export default function NotFound() {
-  return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>404</h1>
-      <p>Page not found</p>
-      <a href="/" style={{ color: 'blue', textDecoration: 'underline' }}>
-        Go back to the homepage
-      </a>
-    </div>
-  );
+  return <NotFoundClient />;
 }
