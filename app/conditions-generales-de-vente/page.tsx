@@ -1,5 +1,5 @@
 import React from "react";
-import HomeButton from "@/components/layout/HomeButton";
+import LegalLayout from "@/components/layout/LegalPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,24 +8,12 @@ export const metadata: Metadata = {
     "Découvrez nos Conditions Générales de Vente pour la création de sites web adaptés aux artisans.",
 };
 
-const CGV: React.FC = () => {
+export default function CGV() {
   return (
-    <>
-      <HomeButton label="Retour à l’accueil" />
-      <div className="px-6 md:px-16 lg:px-32 py-12 max-w-5xl mx-auto font-body text-gray-700 leading-relaxed">
-        {/* Titre principal */}
-        <h1 className="text-4xl md:text-5xl font-heading-sb text-primary mb-8 text-center">
-          Conditions Générales de Vente
-        </h1>
-
-        <p className="mb-10">
-          Bienvenue sur notre page des{" "}
-          <strong>Conditions Générales de Vente (CGV)</strong>. Ces conditions
-          régissent les relations entre notre entreprise et nos clients dans le
-          cadre de la création de sites web pour artisans.
-        </p>
-
-        {/* Sections */}
+    <LegalLayout
+      title="Conditions Générales de Vente"
+      intro="Les présentes conditions générales régissent les ventes réalisées par Jessy Torrez EI. Elles définissent les droits et obligations de chaque partie."
+    >
         <section className="mb-10">
           <h2 className="text-2xl font-heading-sb text-secondary-dark mb-4">
             1. Objet
@@ -108,9 +96,7 @@ const CGV: React.FC = () => {
         </p>
 
         
-      </div>
-    </>
+      
+    </LegalLayout>
   );
 };
-
-export default CGV;

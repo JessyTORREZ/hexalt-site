@@ -8,9 +8,7 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row font-body">
-      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:h-[100vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-lighter to-secondary px-4 py-10 shadow-lg">
-       
-
+      <div className="relative w-full lg:w-[50vw] h-[50vh] lg:portrait:h-[50vh] lg:h-[100vh] flex flex-col justify-start items-center text-center text-quaternary bg-gradient-to-br from-secondary-lighter to-secondary px-4 py-10 shadow-lg">
         <div className="flex-grow flex items-center justify-center w-full min-h-[80px]">
           <Dolottiereact />
         </div>
